@@ -24,15 +24,19 @@
 }
 
 - (BOOL) characterArrayContainsWorf:(NSArray *)characterArray {
+    BOOL containsWorf = NO;
     
     for (NSString *characterName in characterArray) {
+        containsWorf |= [characterName localizedCaseInsensitiveContainsString:@"worf"];
+        /*
         NSString *lowercaseName = characterName.lowercaseString;
-        NSPredicate *lowercaseWorf = [NSPredicate predicateWithFormat:@"SELF == 'worf'"];
-        {
-            return YES;
+        if ([lowercaseName containsString:@"worf"]) {
+            containsWorf = YES;
         }
+         */
     }
-    return NO;
+    
+    return containsWorf;
 }
 
 @end
