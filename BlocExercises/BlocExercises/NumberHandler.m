@@ -17,29 +17,23 @@
 }
 
 - (NSArray *) arrayOfNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
-    NSString *returnString = @"";
-    
-    NSInteger lowNumber, highNumber;
-    
-    if (number < otherNumber) {
-        lowNumber = number;
-        highNumber = otherNumber;
-    } else {
-        lowNumber = otherNumber;
-        highNumber = number;
+    NSMutableArray *mutableRange = [NSMutableArray new];
+    for (NSInteger i = number; i <= otherNumber; i++)  {
+        [mutableRange addObject:@(i)];
     }
-
+    return [mutableRange copy];
+}
 
 - (NSInteger) lowestNumberInArray:(NSArray *)arrayOfNumbers {
     
-    for (NSInteger i = lowNumber; i<= highNumber; i++) {
+    for (NSInteger i = lowNumber; i<= isnumber; i++) {
         NSLog(@"number %d",i);
         returnString = [returnString stringByAppendingFormat:@"%ld",(long)i];
 }
     
-    return returnString;
+    return returnArray;
  }
-}
+
 
 @end
 
