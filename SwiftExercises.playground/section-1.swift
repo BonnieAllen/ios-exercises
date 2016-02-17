@@ -7,7 +7,6 @@ Strings
 */
 
 func favoriteCheeseStringWithCheese(cheese: String) -> String {
-    // WORK HERE
     return cheese
 }
 
@@ -22,7 +21,6 @@ Arrays & Dictionaries
 
 var numberArray = [1, 2, 3, 4]
 // Add 5 to this array
-// WORK HERE
 numberArray.append(5)
 
 let numberDictionary = [1 : "one", 2 : "two", 3 : "three", 4 : "four"]
@@ -36,10 +34,10 @@ Loops
 */
 
 // Use a closed range loop to print 1 - 10, inclusively
-// WORK HERE
+let closeRange = 1...9
 
 // Use a half-closed range loop to print 1 - 10, inclusively
-// WORK HERE
+let halfOpenRange = 1..<10
 
 let worf = [
     "name": "Worf",
@@ -102,8 +100,8 @@ let strings = ["milk", "eggs", "bread", "challah"]
 
 // WORK HERE - make your function and pass `strings` in
 
-let expectedOutput = "milk;eggs;bread;challah"
 
+let expectedOutput = "milk;eggs;bread;challah"
 /*
 
 Closures
