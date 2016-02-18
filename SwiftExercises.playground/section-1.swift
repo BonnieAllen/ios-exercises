@@ -60,7 +60,9 @@ let characters = [worf, picard]
 func favoriteDrinksArrayForCharacters(characters:[[String : String]]) -> [String] {
     // return an array of favorite drinks, like ["prune juice", "tea, Earl Grey, hot"]
     // WORK HERE
-    return []
+    return characters.map { character in
+        character["favorite drink"] ?? ""
+    }
 }
 
 let favoriteDrinks = favoriteDrinksArrayForCharacters(characters)
@@ -111,6 +113,13 @@ Functions
 var strings = ["milk", "eggs", "bread", "challah"]
 
 // WORK HERE - make your function and pass `strings` in
+func createBreakfastFoodList(strings: String = "") ->String {
+    var strings = ";"
+    return "" + strings
+}
+
+let breakfast = createBreakfastFoodList()
+print(breakfast)
 
 
 
