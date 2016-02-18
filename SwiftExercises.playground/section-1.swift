@@ -23,10 +23,12 @@ var numberArray = [1, 2, 3, 4]
 // Add 5 to this array
 numberArray.append(5)
 
-let numberDictionary = [1 : "one", 2 : "two", 3 : "three", 4 : "four"]
+var dict = [1 : "one", 2 : "two", 3 : "three", 4 : "four"]
 // Add 5 : "five" to this dictionary
 // WORK HERE
+dict[5] = "five"
 
+print(dict)
 /*
 
 Loops
@@ -96,9 +98,15 @@ Functions
 
 // Make a function that inputs an array of strings and outputs the strings separated by a semicolon
 
-let strings = ["milk", "eggs", "bread", "challah"]
+var strings = ["milk", "eggs", "bread", "challah"]
 
 // WORK HERE - make your function and pass `strings` in
+func strings(breakfastFood: String) -> String {
+    let breakfastFood = "milk"; "eggs"; "bread"; "challah"
+    return breakfastFood
+}
+
+
 
 
 let expectedOutput = "milk;eggs;bread;challah"
