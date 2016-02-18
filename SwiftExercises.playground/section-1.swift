@@ -12,6 +12,7 @@ func favoriteCheeseStringWithCheese(cheese: String) -> String {
 
 let fullSentence = favoriteCheeseStringWithCheese("cheddar")
 // Make fullSentence say "My favorite cheese is cheddar."
+print("My favorite cheese is" + fullSentence)
 
 /*
 
@@ -25,7 +26,7 @@ numberArray.append(5)
 
 var dict = [1 : "one", 2 : "two", 3 : "three", 4 : "four"]
 // Add 5 : "five" to this dictionary
-// WORK HERE
+
 dict[5] = "five"
 
 print(dict)
@@ -76,6 +77,7 @@ func emailFromUserDict(userDict : [String : String]) -> String {
     // Return the user's email address from userDict, or return "" if they don't have one
     
     // WORK HERE
+
     return "user@example.com"
 }
 
