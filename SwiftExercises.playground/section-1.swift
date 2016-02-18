@@ -74,11 +74,19 @@ Optionals
 */
 
 func emailFromUserDict(userDict : [String : String]) -> String {
+    var email = ""
     // Return the user's email address from userDict, or return "" if they don't have one
     
     // WORK HERE
+    let emailFromUserDict2 = userDict["email"]
+    
+    if emailFromUserDict2 != nil {
+        
+        let unwrappedEmailFromUserDict2 = emailFromUserDict2!
+        email = unwrappedEmailFromUserDict2
+    }
 
-    return "user@example.com"
+    return email
 }
 
 
@@ -103,10 +111,8 @@ Functions
 var strings = ["milk", "eggs", "bread", "challah"]
 
 // WORK HERE - make your function and pass `strings` in
-func strings(breakfastFood: String) -> String {
-    let breakfastFood = "milk"; "eggs"; "bread"; "challah"
-    return breakfastFood
-}
+
+
 
 
 
