@@ -24,14 +24,22 @@
     return [mutableRange copy];
 }
 
+// 10
+// 10 -4 12 3
 - (NSInteger) lowestNumberInArray:(NSArray *)arrayOfNumbers {
+    NSInteger lowestNumber = NSIntegerMax;
+
+    for (NSNumber *currentNumber in arrayOfNumbers) {
+        NSInteger currentInteger = [currentNumber integerValue];
+        NSLog(@"number %d",currentInteger);
+        if (currentInteger < lowestNumber) {
+            lowestNumber = currentInteger;            
+            
+        }
     
-    for (NSInteger i = lowNumber; i<= isnumber; i++) {
-        NSLog(@"number %d",i);
-        returnString = [returnString stringByAppendingFormat:@"%ld",(long)i];
-}
+    }
     
-    return returnArray;
+    return lowestNumber;
  }
 
 
