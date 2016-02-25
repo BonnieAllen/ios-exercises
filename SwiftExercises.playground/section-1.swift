@@ -110,18 +110,15 @@ Functions
 
 // Make a function that inputs an array of strings and outputs the strings separated by a semicolon
 
-var strings = ["milk", "eggs", "bread", "challah"]
+var breakFast = ["milk", "eggs", "bread", "challah"]
 
 // WORK HERE - make your function and pass `strings` in
 func createBreakfastFoodList(strings: String = "") ->String {
-    var strings = ";"
-    return "" + strings
-}
+    let breakFast = "breakFast"
+    return "" + breakFast}
 
 let breakfast = createBreakfastFoodList()
-print(breakfast)
-
-
+print(breakFast)
 
 
 
