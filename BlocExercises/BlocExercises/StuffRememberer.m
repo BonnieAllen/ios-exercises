@@ -19,7 +19,7 @@
 }
 
 - (void) rememberThisFloatForLater:(CGFloat)floatToRemember {
-    self.floatToRemember = *(&(floatToRemember));
+    self.floatToRemember = floatToRemember;
 }
 
 - (NSMutableArray *) arrayYouShouldRemember {
